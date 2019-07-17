@@ -9,7 +9,7 @@ define('PAGES', [
     ['id' => 'home', 'title' => 'Home', 'navbar' => true],
     ['id' => 'about', 'title' => 'About this project', 'navbar' => true, 'homeImage' => 'biodaten_logo.jpg'],
     ['id' => 'news', 'title' => 'News', 'navbar' => true, 'homeImage' => 'biodaten_logo.jpg'],
-    ['id' => 'details', 'title' => 'Details', 'navbar' => true, 'homeImage' => 'biodaten_logo.jpg'],
+    ['id' => 'conferences', 'title' => 'Conferences', 'navbar' => true, 'homeImage' => 'biodaten_logo.jpg'],
     ['id' => 'privacy', 'title' => 'Privacy'],
 ]);
 
