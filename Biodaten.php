@@ -60,7 +60,7 @@ function GetPageFooterEntries() {
     $entries = '';
     foreach (PAGES as $page) {
         if (isset($page['footer']) && $page['footer'] === true) {
-            $entries .= '<a href="'.GetPageUrl($page['id']).'">'.ucfirst($page['id']).'</a>';
+            $entries .= '<a href="'.GetPageUrl($page['id']).'">'.ucfirst($page['id']).'</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
         }
     }
     return $entries;

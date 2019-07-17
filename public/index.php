@@ -53,10 +53,14 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <span class="text-muted">
+            <div class="float-left">
                 <?=GetPageFooterEntries();?>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© 2019 Eberhard Karls Universität Tübingen, Tübingen
-            </span>
+            </div>
+            <div class="float-right">
+                <span class="text-muted">
+                    © 2019 Eberhard Karls Universität Tübingen, Tübingen
+                </span>
+            </div>
         </div>
     </footer>
 </body>
