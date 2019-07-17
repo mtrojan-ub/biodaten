@@ -1,0 +1,61 @@
+<?php
+    namespace Biodaten;
+    require('../inc.php');
+?>
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>BioDATEN – Bioinformatics DATa Environment</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/biodaten.css">
+
+    <!-- Also jQuery to avoid Bootstrap error when clicking on menu -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <header>
+        <div id="navbarHeader" class="bg-dark collapse">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">About</h4>
+                        <p class="text-white">This is the official project website of BioDATEN – Bioinformatics DATa Environment, a new Science Data Center which is to be created in Baden-Württemberg.</p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Pages</h4>
+                        <ul class="list-unstyled">
+                            <?php print GetPageNavbarEntriesExtended()?>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+                <?php print GetPageNavbarEntries()?>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main role="main">
+        <?php
+            require(GetPageTemplate());
+        ?>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">
+                <a href="<?php print GetPageUrl('privacy')?>">Privacy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© 2019 Eberhard Karls Universität Tübingen, Tübingen
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
