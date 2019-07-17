@@ -10,8 +10,9 @@ define('PAGES', [
     ['id' => 'about', 'title' => 'About this project', 'navbar' => true, 'homeImage' => 'biodaten_logo.jpg'],
     ['id' => 'news', 'title' => 'News', 'navbar' => true, 'homeImage' => 'biodaten_logo.jpg'],
     ['id' => 'conferences', 'title' => 'Conferences', 'navbar' => true, 'homeImage' => 'biodaten_logo.jpg'],
-    ['id' => 'privacy', 'title' => 'Privacy'],
-    ['id' => 'imprint', 'title' => 'Imprint'],
+    ['id' => 'links', 'title' => 'Links', 'footer' => true],
+    ['id' => 'privacy', 'title' => 'Privacy', 'footer' => true],
+    ['id' => 'imprint', 'title' => 'Imprint', 'footer' => true],
 ]);
 
 function GetPageCards() {
@@ -55,12 +56,22 @@ function GetPageNavbarEntriesExtended() {
     return $entries;
 }
 
+function GetPageFooterEntries() {
+    $entries = '';
+    foreach (PAGES as $page) {
+        if (isset($page['footer']) && $page['footer'] === true) {
+            $entries .= '<a href="'.GetPageUrl($page['id']).'">'.ucfirst($page['id']).'</a>';
+        }
+    }
+    return $entries;
+}
+
 function GetPageUrl($id) {
     return ($id == DEFAULT_PAGE) ? '/' : '/?page=' . urlencode($id);
 }
 
 function GetPageTemplate() {
     $page = $_GET['page'] ?? DEFAULT_PAGE;
-    $pageTemplate = is_file(DIR_TPL . $page . '.php') ? DIR_TPL . $page . '.php' : DEFAULT_PAGE . '.php';
+    $pageTemplate = is_file(DIR_TPL . $page . '.php') ? DIR_TPL . $page . '.php' : DIR_TPL . DEFAULT_PAGE . '.php';
     return $pageTemplate;
 }

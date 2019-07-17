@@ -31,7 +31,7 @@
                     <div class="col-sm-4 offset-md-1 py-4">
                         <h4 class="text-white">Pages</h4>
                         <ul class="list-unstyled">
-                            <?php print GetPageNavbarEntriesExtended()?>
+                            <?=GetPageNavbarEntriesExtended()?>
                         </ul>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
         </div>
         <div class="navbar navbar-dark bg-dark shadow-sm">
             <div class="container d-flex justify-content-between">
-                <?php print GetPageNavbarEntries()?>
+                <?=GetPageNavbarEntries()?>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -54,7 +54,7 @@
     <footer class="footer">
         <div class="container">
             <span class="text-muted">
-                <a href="<?php print GetPageUrl('privacy')?>">Privacy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="<?php print GetPageUrl('imprint')?>">Imprint</a>
+                <?=GetPageFooterEntries();?>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© 2019 Eberhard Karls Universität Tübingen, Tübingen
             </span>
         </div>
