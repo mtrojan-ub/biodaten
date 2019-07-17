@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>BioDATEN – Bioinformatics DATa Environment</title>
+    <link rel="shortcut icon" href="img/biodaten_favicon.ico" type="image/png" />
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
