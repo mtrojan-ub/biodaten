@@ -1,6 +1,6 @@
 <?php
     namespace Biodaten;
-    require('../inc.php');
+    require('../Biodaten.php');
 ?>
 <!doctype html>
 <html lang="de">
