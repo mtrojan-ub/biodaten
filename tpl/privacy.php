@@ -1,5 +1,6 @@
 <div class="container">
-    <table class="table">
+    <h1>Privacy</h1>
+    <table class="table table-striped">
         <tr>
             <td>Name of Service</td>
             <td>Biodaten</td>
