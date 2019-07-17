@@ -11,6 +11,7 @@ define('PAGES', [
     ['id' => 'news', 'title' => 'News', 'navbar' => true, 'homeImage' => 'biodaten_logo.jpg'],
     ['id' => 'conferences', 'title' => 'Conferences', 'navbar' => true, 'homeImage' => 'biodaten_logo.jpg'],
     ['id' => 'privacy', 'title' => 'Privacy'],
+    ['id' => 'imprint', 'title' => 'Imprint'],
 ]);
 
 function GetPageCards() {

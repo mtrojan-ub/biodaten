@@ -53,7 +53,8 @@
     <footer class="footer">
         <div class="container">
             <span class="text-muted">
-                <a href="<?php print GetPageUrl('privacy')?>">Privacy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© 2019 Eberhard Karls Universität Tübingen, Tübingen
+                <a href="<?php print GetPageUrl('privacy')?>">Privacy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="<?php print GetPageUrl('imprint')?>">Imprint</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© 2019 Eberhard Karls Universität Tübingen, Tübingen
             </span>
         </div>
     </footer>
