@@ -26,7 +26,7 @@
         </tr>
         <tr>
             <td>Internet-Adresse:</td>
-            <td><a href="//www.uni-tuebingen.de">http://www.uni-tuebingen.de</a></td>
+            <td><a target="_blank" href="//www.uni-tuebingen.de">http://www.uni-tuebingen.de</a></td>
         </tr>
         <tr>
             <td>Umsatzsteuer-Identifikationsnummer:</td>
