@@ -31,11 +31,11 @@ body {
 *   - grey2 (from logo): #808285
 * - gold: #b4a069
 */
-a {
+a, .btn-link {
     color: #a51e37;
 }
 
-a:hover {
+a:hover, .btn-link:hover {
     color: #a51e37;
     /*text-decoration: none;*/
 }
