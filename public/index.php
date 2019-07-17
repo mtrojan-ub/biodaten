@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/biodaten.css">
 
     <!-- Also jQuery to avoid Bootstrap error when clicking on menu -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="vendor/jquery/jquery-3.4.1.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
 </head>
 <body>
