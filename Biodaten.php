@@ -7,9 +7,9 @@ define('DIR_TPL', '../tpl/');
 define('DEFAULT_PAGE', 'home');
 define('PAGES', [
     ['id' => 'home', 'title' => 'Home', 'navbar' => true],
-    ['id' => 'about', 'title' => 'About this project', 'navbar' => true, 'homeImage' => 'biodaten_logo.jpg'],
-    ['id' => 'news', 'title' => 'News', 'navbar' => true, 'homeImage' => 'biodaten_logo.jpg'],
-    ['id' => 'conferences', 'title' => 'Conferences', 'navbar' => true, 'homeImage' => 'biodaten_logo.jpg'],
+    ['id' => 'about', 'title' => 'About this project', 'navbar' => true, 'homeImage' => 'question-mark-2123969_640.jpg'],
+    ['id' => 'news', 'title' => 'News', 'navbar' => true, 'homeImage' => 'newspapers-444447_640.jpg'],
+    ['id' => 'conferences', 'title' => 'Conferences', 'navbar' => true, 'homeImage' => 'event-1597531_640.jpg'],
     ['id' => 'links', 'title' => 'Links', 'footer' => true],
     ['id' => 'privacy', 'title' => 'Privacy', 'footer' => true],
     ['id' => 'imprint', 'title' => 'Imprint', 'footer' => true],
