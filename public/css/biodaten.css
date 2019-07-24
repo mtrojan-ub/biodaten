@@ -8,6 +8,10 @@ main {
     padding: 2rem 0rem;
 }
 
+#img-home { width: 800px; }
+@media(max-width: 1000px) { #img-home { width: 400px; } }
+@media(max-width: 500px) { #img-home { width: 200px; } }
+
 /**
  * sticky footer
  */
@@ -46,4 +50,10 @@ a:hover, .btn-link:hover {
 
 .bg-dark {
     background-color: #32414b !important;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
 }
