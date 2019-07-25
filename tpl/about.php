@@ -28,11 +28,6 @@
         <li><a target="_blank" href="//www.uniklinik-ulm.de/neurologie.html">Neurologie Universität Ulm (ZBMF)</a></li>
     </ul>
 
-    <h2>Sponsors</h2>
-    <ul>
-        <li><a target="_blank" href="//mwk.baden-wuerttemberg.de/de/startseite/">Ministerium für Wissenschaft, Forschung und Kunst Baden-Württemberg</a></li>
-    </ul>
-
     <h2>Time Span</h2>
     <p>
         01.07.2019-30.06.2023
