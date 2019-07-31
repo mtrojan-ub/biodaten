@@ -24,7 +24,7 @@
         </tr>
         <tr>
             <td>Personal data processed</td>
-            <td>??? log files ???</td>
+            <td>Your IP address and accessed pages will be stored in the server log files for three months.</td>
         </tr>
         <tr>
             <td>Third parties to whom personal data is disclosed</td>
@@ -43,5 +43,5 @@
             <td>Your personal data will be protected according to the <a href="https://geant3plus.archive.geant.net/uri/dataprotection-code-of-conduct/v1/Pages/default.aspx">Code of Conduct for Service Providers</a>, a common standard for the research and higher education sector to protect your privacy.</td>
         </tr>
     </table>
-    Page last changed 2019-07-16
+    Page last changed 2019-07-31
 </div>
