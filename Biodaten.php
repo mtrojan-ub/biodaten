@@ -40,7 +40,7 @@ function GetPageNavbarEntries() {
     foreach (PAGES as $page) {
         if (isset($page['navbar']) && $page['navbar'] === true) {
             $entries .=
-            '<a href="'.GetPageUrl($page['id']).'" class="navbar-brand d-flex align-items-center">
+            '<a href="'.GetPageUrl($page['id']).'" class="navbar-brand align-items-center d-none d-sm-flex">
                 <strong>'.ucfirst($page['id']).'</strong>
             </a>';
         }

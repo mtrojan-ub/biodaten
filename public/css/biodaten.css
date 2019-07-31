@@ -10,8 +10,7 @@ main {
 }
 
 #img-home { width: 800px; }
-@media(max-width: 1000px) { #img-home { width: 400px; } }
-@media(max-width: 500px) { #img-home { width: 200px; } }
+@media(max-width: 1000px) { #img-home { width: 90%; } }
 
 /**
  * sticky footer

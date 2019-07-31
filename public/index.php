@@ -38,7 +38,7 @@
             </div>
         </div>
         <div class="navbar fixed-top navbar-dark bg-dark shadow-sm">
-            <div class="container d-flex justify-content-between">
+            <div class="container d-flex justify-content-end justify-content-sm-between">
                 <?=GetPageNavbarEntries()?>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
