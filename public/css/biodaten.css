@@ -55,3 +55,41 @@ a:hover, .btn-link:hover {
     height: 20vh;
     object-fit: cover;
 }
+
+
+/* BW logo needs lots of css to work properly */
+.bw-logo {
+    max-width: 510px;
+}
+.bw-logo-ministry, .bw-logo-ministry:hover {
+    align-items: flex-end;
+    color: rgb(63, 63, 63);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    line-height: 26px;
+    margin: 0 0 0 0;
+    text-decoration: none;
+}
+.bw-logo-image {
+    box-sizing: border-box;
+    height: 62px;
+    line-height: 26px;
+    max-width: 110px;
+    vertical-align: middle;
+}
+.bw-logo-text {
+    align-items: flex-end;
+    box-sizing: border-box;
+    font-family: EB Garamond, Georgia, Times New Roman, Times, serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: -4px;
+    margin-left: 15px;
+    margin-top: 0px;
+    max-width: 100%;
+    text-align: left;
+    transition-duration: 0.2s;
+    transition-property: none;
+}
