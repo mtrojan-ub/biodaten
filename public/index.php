@@ -54,22 +54,21 @@
     <footer class="footer mt-auto py-3">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 footer-row d-flex flex-row justify-content-around justify-content-sm-start">
                     <?=GetPageFooterEntries();?>
                 </div>
-                <div class="col-12">
-                    <p style="margin-top:20px;">sponsored by:</p>
-                        <div class="bw-logo-wrap">
-                            <div class="bw-logo">
-                                <a class="bw-logo-ministry" href="//mwk.baden-wuerttemberg.de/de/startseite/">
-                                    <img class="bw-logo-image" src="img/logo-bawue.png" alt="Ministerium für Wissenschaft, Forschung und Kunst Baden-Württemberg">
-                                    <span class="bw-logo-text">Ministerium für Wissenschaft, Forschung und Kunst Baden-Württemberg</span>
-                                </a>
-                            </div>
+                <div class="col-12 footer-row">
+                    <div class="bw-logo-wrap">
+                        <div class="bw-header__logo">
+                            <p>sponsored by:</p>
+                            <a class="bw-logo--ministry" href="//mwk.baden-wuerttemberg.de/de/startseite/">
+                                <img class="bw-logo__image" src="img/logo-bawue.png" alt="Ministerium für Wissenschaft, Forschung und Kunst Baden-Württemberg">
+                                <span class="bw-logo__text">Ministerium für Wissenschaft, Forschung und Kunst Baden-Württemberg</span>
+                            </a>
                         </div>
-                    </p>
+                    </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 footer-row">
                     <span class="text-muted">
                         © 2019 Eberhard Karls Universität Tübingen, Tübingen
                     </span>
