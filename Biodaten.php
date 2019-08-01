@@ -20,15 +20,11 @@ function GetPageCards() {
     foreach (PAGES as $page) {
         if (isset($page['homeImage'])) {
             $cards .=
-                '<div class="col-md-4">
-                    <a href="'.GetPageUrl($page['id']).'">
-                        <div class="card mb-4 shadow-sm">
-                            <img src="img/'.htmlspecialchars($page['homeImage']).'" class="card-img-top" alt="'.htmlspecialchars($page['title']).'">
-                            <div class="card-body">
-                                <p class="card-text">'.htmlspecialchars($page['title']).'</p>
-                            </div>
-                        </div>
-                    </a>
+                '<div class="card">
+                    <img class="card-img-top" src="img/'.htmlspecialchars($page['homeImage']).'" alt="'.htmlspecialchars($page['title']).'">
+                    <div class="card-body">
+                        <a class="card-text stretched-link" href="'.GetPageUrl($page['id']).'">'.htmlspecialchars($page['title']).'</a>
+                    </div>
                 </div>';
         }
     }

@@ -8,9 +8,9 @@
         <h2 class="jumbotron-heading">Science Data Center</h1>
     </div>
 </section>
-<div class="album py-5 bg-light">
+<div class="bg-light" style="padding-top: 60px; padding-bottom: 40px;">
     <div class="container">
-        <div class="row">
+        <div class="card-deck">
             <?php print \Biodaten\GetPageCards();?>
         </div>
     </div>
