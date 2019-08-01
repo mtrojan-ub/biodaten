@@ -24,7 +24,7 @@
         <div id="navbarHeader" class="bg-dark collapse">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-8 col-md-7 py-4">
+                    <div class="col-sm-8 col-md-7 py-4 d-none d-sm-block">
                         <h4 class="text-white">About</h4>
                         <p class="text-white">This is the official project website of BioDATEN – Bioinformatics DATa Environment, a new Science Data Center which is to be created in Baden-Württemberg.</p>
                     </div>
@@ -38,7 +38,7 @@
             </div>
         </div>
         <div class="navbar fixed-top navbar-dark bg-dark shadow-sm">
-            <div class="container d-flex justify-content-end justify-content-sm-between">
+            <div class="container d-flex justify-content-between">
                 <?=GetPageNavbarEntries()?>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
