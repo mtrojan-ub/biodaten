@@ -7,9 +7,9 @@ define('DIR_TPL', '../tpl/');
 define('DEFAULT_PAGE', 'home');
 define('PAGES', [
     ['id' => 'home', 'title' => 'Home', 'navbar' => 'always'],
-    ['id' => 'about', 'title' => 'About this project', 'navbar' => 'responsive', 'homeImage' => 'question-mark-2123969_640.jpg'],
-    ['id' => 'news', 'title' => 'News', 'navbar' => 'responsive', 'homeImage' => 'newspapers-444447_640.jpg'],
-    ['id' => 'conferences', 'title' => 'Conferences', 'navbar' => 'responsive', 'homeImage' => 'event-1597531_640.jpg'],
+    ['id' => 'about', 'title' => 'About this project', 'navbar' => 'responsive', 'homeImage' => 'question-mark-2123969_640_400.jpg'],
+    ['id' => 'news', 'title' => 'News', 'navbar' => 'responsive', 'homeImage' => 'newspapers-444447_640_400.jpg'],
+    ['id' => 'conferences', 'title' => 'Conferences', 'navbar' => 'responsive', 'homeImage' => 'event-1597531_640_400.jpg'],
     ['id' => 'links', 'title' => 'Links', 'footer' => true],
     ['id' => 'privacy', 'title' => 'Privacy', 'footer' => true],
     ['id' => 'imprint', 'title' => 'Imprint', 'footer' => true],
