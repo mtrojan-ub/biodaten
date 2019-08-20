@@ -4,7 +4,37 @@
     <!-- use accordion, see: https://getbootstrap.com/docs/4.3/components/collapse/#accordion-example -->
     <div id="accordion-news" class="accordion">
 
-        <?php $date='2019-07-04';?>
+        <?php $date='2019-08-20';?>
+        <div class="card">
+            <div id="heading-<?=$date?>" class="card-header">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-<?=$date?>" aria-expanded="true" aria-controls="collapse-<?=$date?>">
+                       <?=$date?> - Science Data Center BioDATEN as part of the NFDI process
+                    </button>
+                </h2>
+            </div>
+            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+                <div class="card-body">
+                    <p>
+                        <b>Together with colleagues from Tübingen, Konstanz, Freiburg, Heidelberg, ... parts of the BioDATEN community joined forces with the DaPLUS+ consortium from Kaiserlautern, Jülich and Düsseldorf to paticipate in the process to create a National Research Data Infrastructure. The newly formed consortium centers around plant data in bioinformatics and handed in a <a target="_blank" href="//www.dfg.de/download/pdf/foerderung/programme/nfdi/absichtserklaerungen/2019/2019_data_plant.pdf">binding "Letter of Interest"</a>.</b>
+                    </p>
+                    <p>
+                        In modern hypothesis-driven science, researchers increasingly rely on effective research data management services and infrastructures that facilitate the acquisition, processing, exchange and archival of research data sets, to enable the linking of interdisciplinary expertise and the combination of different analytical results. The immense additional insight obtained through comparative and integrative analyses provides additional value in the examination of research questions that goes far beyond individual experiments. Specifically, in the research area of fundamental plant research that this consortium focuses on, modern approaches need to integrate analyses across different system levels (such as genomics, transcriptomics, proteomics, metabolomics, phenomics). This is necessary to understand system-wide molecular physiological responses as a complex dynamic adjustment of the interplay between genes, proteins and metabolites. As a consequence, a wide range of different technologies as well as experimental and computational methods are employed to pursue state-of-the-art research questions, rendering the research objective a team effort across disciplines. The overall goal of DataPLANT is to provide the research data management practices, tools, and infrastructure to enable such collaborative research in plant biology. In this context, common standards, software, and infrastructure can ensure availability, quality, and interoperability of data, metadata, and data-centric workflows and are thus a key success factor and crucial precondition in barrier-free, high-impact collaborative plant biology research. Toward this, the key objectives pursued by this consortium are:
+                        <ol>
+                            <li>A specific community standard for fundamental plant research (meta)data and workflow annotation, based on generic, existing and emerging standards (e.g., ISA model, MIAPPE) and ontologies in plant science.</li>
+                            <li>Assistive mechanisms and services to build, link and maintain the complete research context during data acquisition, curation, analysis, and publication.</li>
+                            <li>Mechanisms for collaborative research based on enrichment and automatized crosslinking of plant-research specific (meta)data to facilitate research context management.</li>
+                            <li>A cloud-based open reference implementation of these mechanisms and services, and a central hosted instance thereof.</li>
+                            <li>A robust, federated infrastructure both for data computation and management covering the complete data lifecycle.</li>
+                            <li>Comprehensive training of community members through workshops and summer schools and providing open training material.</li>
+                        </ol>
+                        The final grant application is due to the 15th October.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+	<?php $date='2019-07-04';?>
         <div class="card">
             <div id="heading-<?=$date?>" class="card-header">
                 <h2 class="mb-0">
@@ -13,7 +43,7 @@
                     </button>
                 </h2>
             </div>
-            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+            <div id="collapse-<?=$date?>" class="collapse" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
                 <div class="card-body">
                     <small>(Source: <a target="_blank" href="//www.rz.uni-freiburg.de/rz/aktuell/bioDATEN-at-GCC2019">RUF</a>)</small>
                     <p>
