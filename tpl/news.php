@@ -3,6 +3,40 @@
 
     <!-- use accordion, see: https://getbootstrap.com/docs/4.3/components/collapse/#accordion-example -->
     <div id="accordion-news" class="accordion">
+        <?php $date='2019-10-22';?>
+        <div class="card">
+            <div id="heading-<?=$date?>" class="card-header">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-<?=$date?>" aria-expanded="true" aria-controls="collapse-<?=$date?>">
+                       <?=$date?> - Start of Teaching Series on Research Data Management in Bioinformatics - Workshop on Data Management Plans in Freiburg
+                    </button>
+                </h2>
+            </div>
+            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+                <div class="card-body">
+                    <p>
+                        <b>
+                            Research processes produce an increasing amount of digital data. They are often very discipline-specific and exist in different forms. They can be the basis as well as the result of research. Preserving, managing and curating research data thus becomes a central task for every scientist and research institution - from the preparation of a research proposal to everyday research work. This process must be structured and organised. An increasingly established solution is the use of data management plans (DMP). They can primarily be understood as an abstract concept that helps to define data management through the planned course of the research project and its subsequent long-term availability.
+                        </b>
+                    </p>
+                    <p>
+                        A DMP structures the handling of research data over their life cycle. In the process, findings on required or generated data sets are to be considered as well as their licensing, enrichment with metadata, necessary processing steps and software, or ownership over time. The aim of the event is to explore the manifold questions surrounding data management and to enable the participants to create such a plan themselves. The course will cover the following topics:
+                        <ul>
+                            <li>Introduction to research data management</li>
+                            <li>Presentation of the individual components of a data management plan: Collection of project metadata, description of the data genesis or data stock, data management, consolidation and archiving, exchange and standardization</li>
+                            <li>Development and design of a data management plan</li>
+                            <li>Digital data management in the research proposal</li>
+                            <li>Presentation of online help tools (e.g. RDMO) and example DMPs (BMBF, DFG)</li>
+                            <li>Institutional support</li>
+                        </ul>
+                    </p>
+                    <p>
+                        The course is part of the university's professional qualification programme. Application is possible via the <a target="_blank" href="//campus.uni-freiburg.de/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=84438&periodId=1804&navigationPosition=hisinoneLehrorganisation,examEventOverview">Campus Management System</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <?php $date='2019-10-18';?>
         <div class="card">
             <div id="heading-<?=$date?>" class="card-header">
@@ -12,7 +46,7 @@
                     </button>
                 </h2>
             </div>
-            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+            <div id="collapse-<?=$date?>" class="collapse" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
                 <div class="card-body">
                     <p>
                         <b>
