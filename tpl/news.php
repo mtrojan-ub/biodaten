@@ -3,6 +3,33 @@
 
     <!-- use accordion, see: https://getbootstrap.com/docs/4.3/components/collapse/#accordion-example -->
     <div id="accordion-news" class="accordion">
+        <?php $date='2019-11-27';?>
+        <div class="card">
+            <div id="heading-<?=$date?>" class="card-header">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-<?=$date?>" aria-expanded="true" aria-controls="collapse-<?=$date?>">
+                       <?=$date?> - BioDATEN in Strasbourg in EUCOR networking
+                    </button>
+                </h2>
+            </div>
+            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+                <div class="card-body">
+                    <p>
+                        The science data center BioDATEN exploited the chance for networking in the European Campus (EUCOR) setting. The session took place in Strasbourg on the 27th November to exchange on the current state on research data management and possible future joint activities of the member universities. BioDATEN and its concept on RDM as well as other member's actions were presented in the first half of the session. There are different forms of researchers' support provided by local research data management groups or facilities ranging from information portals to personal advice in grant application. The concept of data stewards as specialized personnel bridging the gap between the researchers and the RDM practice becomes more and more common. Some ideas got developed to setup special training courses and study tracks within the EUCOR context to qualify students in that domain.
+                    </p>
+                    <p>
+                        The RDM landscape is quite diverse and in different levels of maturity.<br/>Many of the member universities started with education programmes on a general level or more specifically on data management plans. A major focus of the EUCOR activities are on training as the coordination overhead is the lowest. As there is quite some demand especially on the PhD level the idea came up to coordinate in domain specific courses within the EUCOR setting. Then not every institution has to provide expertise on all scientific domains but can specialize. Here the BioDATEN education and qualification activities could fit in very well to support the bioinformatics community to a wider degree, which would be perfectly in line with the SDC's objectives. Frameworks exist within EUCOR allowing university members to attend courses in other locations.
+                    </p>
+                    <p>
+                        France has a more centralized approach on its universities and thus pushes ORCID as a national standard on persistent person identifiers (a subject evaluated in BioDATEN in work package 1.2.4). Further on exchange is planned both on ideas on technical systems for storage, suitable repository software, data visualization, governance, data stewardship and policies.
+                    </p>
+                    <p>
+                        <img class="img-fluid" src="img/news/<?=$date?>.jpg" />
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <?php $date='2019-11-21';?>
         <div class="card">
             <div id="heading-<?=$date?>" class="card-header">
@@ -12,7 +39,7 @@
                     </button>
                 </h2>
             </div>
-            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+            <div id="collapse-<?=$date?>" class="collapse" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
                 <div class="card-body">
                     <p>
                         The qualification activities of the BioDATEN SDC started with a course on the concept and the creation of Data Management Plans: "Introduction to Research Data Management – Data Management Plans". The course held at the Computer Center in Freiburg University was jointly organized by the Freiburg Research Data Management Group and the Science Data Center BioDATEN. The course gave a brief overview of the handling of research data and different aspects of the creation of research data management plans over the complete life cycle of the respective data. The course presented concepts and strategies for the creation of DMPs in research projects to ensure the long-term re-usability and accessibility of electronic research data, including functional issues, documentation and appropriate enrichment with metadata. Furthermore, the areas of planning archiving strategies, issues on sensitive data and, last but not least, cost and refinancing models were discussed. Recommendations for Data Management Plans were given on the structure, necessary elements ranging from standard project metadata to considerations on amount of data sets, file types and software involved. Further relevant points were data and software licensing and special considerations were dedicated on data citation which might become part of future credits for research.
