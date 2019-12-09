@@ -3,6 +3,31 @@
 
     <!-- use accordion, see: https://getbootstrap.com/docs/4.3/components/collapse/#accordion-example -->
     <div id="accordion-news" class="accordion">
+        <?php $date='2019-12-09';?>
+        <div class="card">
+            <div id="heading-<?=$date?>" class="card-header">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-<?=$date?>" aria-expanded="true" aria-controls="collapse-<?=$date?>">
+                       <?=$date?> - BioDATEN and DataPLANT. NFDI application defended in Bonn
+                    </button>
+                </h2>
+            </div>
+            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+                <div class="card-body">
+                    <p>
+                        <b>BioDATEN was one of the originators beside DaPLUS of Kaiserslautern and Jülich of the DataPLANT NFDI consortium on fundamental plant research which finished the next round together with other consortia like NFDI4AGRI, NFDI4Earth and NFDI4BioDiversity.</b>
+                    </p>
+                    <p>
+                        On the 2nd and 3rd of December 2019 we have been in Bonn and presented and defended our NFDI application "DataPLANT". The perceived feedback on the first day was quite positive. On the second day, we received in a further individual round a couple of more detailed questions on certain aspects. We are optimistic that we left a solid impression, whereby a general assessment and classification is difficult at this stage of the overall procedure. DataPLANT is a comparably small consortium compared to other larger ones. In January 2020, we expect a written statement, to which we can react again with a three-page comment. On this basis, the reviewers will make a recommendation by the end of May 2020. The formal decision will probably be made at the end of July 2020.
+                    </p>
+                    <p>
+                        <img class="img-fluid" src="img/news/<?=$date?>.jpg" />
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    <div id="accordion-news" class="accordion">
         <?php $date='2019-11-27';?>
         <div class="card">
             <div id="heading-<?=$date?>" class="card-header">
@@ -12,7 +37,7 @@
                     </button>
                 </h2>
             </div>
-            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+            <div id="collapse-<?=$date?>" class="collapse" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
                 <div class="card-body">
                     <p>
                         The science data center BioDATEN exploited the chance for networking in the European Campus (EUCOR) setting. The session took place in Strasbourg on the 27th November to exchange on the current state on research data management and possible future joint activities of the member universities. BioDATEN and its concept on RDM as well as other member's actions were presented in the first half of the session. There are different forms of researchers' support provided by local research data management groups or facilities ranging from information portals to personal advice in grant application. The concept of data stewards as specialized personnel bridging the gap between the researchers and the RDM practice becomes more and more common. Some ideas got developed to setup special training courses and study tracks within the EUCOR context to qualify students in that domain.
