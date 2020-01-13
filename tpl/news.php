@@ -3,6 +3,34 @@
 
     <!-- use accordion, see: https://getbootstrap.com/docs/4.3/components/collapse/#accordion-example -->
     <div id="accordion-news" class="accordion">
+        <?php $date='2020-01-13';?>
+        <div class="card">
+            <div id="heading-<?=$date?>" class="card-header">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-<?=$date?>" aria-expanded="true" aria-controls="collapse-<?=$date?>">
+                       <?=$date?> - The RDM WG in Baden-Württemberg advocates for ORCID
+                    </button>
+                </h2>
+            </div>
+            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+                <div class="card-body">
+                    <p>
+                        Initiated by the activities of the BioDATEN Science Data Center the Research Data Management Working Group (RDM WG) in Baden-Württemberg fosters the spread and use of ORCID IDs as persistent person identifiers. This ID will provide one of the necessary base metadata items to describe data sets within the BioDATEN community. The support document created and agreed upon is meant to help decision makers in the state's research institutions to choose a suitable solution for stable identification of persons and standardization.
+                    </p>
+                    <p>
+                        In a strongly networked scientific landscape with a high proportion of national and international cooperation, which is characteristic of the bioinformatics and other scientific communities in Baden-Württemberg, the aim is to promote or at least closely coordinate the services for research data management. This will allow a closer exchange on the challenges and a joint approach to the provision of infrastructures. Persistent identifiers for people in science and the linking of their activities and achievements are very important topics. Due to high fluctuation in science, an agreement on a uniform system such as <a href="//orcid.org" target="_blank">ORCID</a> would be a considerable alleviation, since switching between institutions does not require any changes to the database. An identifier should be stable and unique for persons and institutions.
+                        With this document, the RDM WG would like to join the MoU of <a href="//doi.org/10.18452/19528" target="_blank">DINI</a> and make a recommendation for ORCID, as this system has a high acceptance on the part of institutions and individual researchers.
+                    </p>
+                    <p>
+                        For use in research information systems and research data management, the ORCID ID of the person becomes the identifier for the PID graph, <a href="//ror.org" target="_blank">RORID</a> the identifier for organisations and <a href="//www.re3data.org" target="_blank">re3data</a> for repositories. ORCID is based on open source components, is not linked to individual commercial providers, and implements a right of co-determination within the framework of membership. Due to the already high ubiquity ORCID ID is already an accepted worldwide quasi-standard. Furthermore, such a standard helps to support cultural change by also considering research data as credits for scientific reputation. The ORCID is researcher-centric, relies on the CC0 license for metadata and can already be used as an authentication source. There is an established governance structure in which institutions can exert influence through their membership. Furthermore, the implementation ensures that researchers retain full control over their own personal data.
+                    </p>
+                    <p>
+                        Nevertheless, in an international system like ORCID with decentralised management by researchers, there are some challenges in ensuring the quality of metadata. For example, an assignment to the current institution is not checked. There is some form of public or peer-to-peer control, but no specific enforcement of corrections. Another challenge is the management of departments, entities and organisations. This is getting addressed by RORID. As a global identity management system, the ORCID ID raises data protection issues. However, the organisation has made considerable efforts to increase the level of data protection and in particular to comply with the GDPR.
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <?php $date='2019-12-09';?>
         <div class="card">
             <div id="heading-<?=$date?>" class="card-header">
@@ -12,7 +40,7 @@
                     </button>
                 </h2>
             </div>
-            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+            <div id="collapse-<?=$date?>" class="collapse" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
                 <div class="card-body">
                     <p>
                         <b>BioDATEN was one of the originators beside DaPLUS of Kaiserslautern and Jülich of the DataPLANT NFDI consortium on fundamental plant research which finished the next round together with other consortia like NFDI4AGRI, NFDI4Earth and NFDI4BioDiversity.</b>
@@ -27,7 +55,6 @@
             </div>
         </div>
 
-    <div id="accordion-news" class="accordion">
         <?php $date='2019-11-27';?>
         <div class="card">
             <div id="heading-<?=$date?>" class="card-header">
