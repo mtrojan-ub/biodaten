@@ -21,7 +21,7 @@
 </head>
 <body>
     <header>
-        <div id="navbarHeader" class="bg-dark collapse">
+        <div id="navbarHeader" class="bg-dark collapse fixed-top">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8 col-md-7 py-4 d-none d-sm-block">
