@@ -3,6 +3,30 @@
 
     <!-- use accordion, see: https://getbootstrap.com/docs/4.3/components/collapse/#accordion-example -->
     <div id="accordion-news" class="accordion">
+        <?php $date='2020-02-05';?>
+        <div class="card">
+            <div id="heading-<?=$date?>" class="card-header">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-<?=$date?>" aria-expanded="true" aria-controls="collapse-<?=$date?>">
+                       <?=$date?> - DataPLANT NFDI - a further step mastered and work ahead
+                    </button>
+                </h2>
+            </div>
+            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+                <div class="card-body">
+                    <p>
+                        BioDATEN and DAplus+ are jointly involved in the nationwide NFDI process with DataPLANT Consortium (in the area of Fundamental Plant Research). End of January the review of the DFG assessment of the of the application and the oral presentation in Bonn (Link to the older message) in early December arrived. The reviewers gave a widely positive feedback, from which we deduce that DataPLANT is still in the group for consideration of funding. We would like to thank our collaborators from the Galaxy team, especially Anika Erxleben and from the Technical University in Kaiserslautern and Jülich Research Center. The feedback addresses various areas of the proposal, such as "Maturity and relevance", "Research data management" and "Internal structure and sustainability". Besides very positive remarks there are also some critical passages that should be considered in the answer.
+                    </p>
+                    <p>
+                        Some snippets from the review: "The consortium is thematically closely focused on fundamental plant science research. This strong focus and the fact that, in addition to model plants, some cultivated plant species are also taken into account is seen as a clear strength of this consortium" ... "The planned implementation of processes for metadata validation seems to make sense and the claim to improve the quality of existing metadata instead of discarding it is commendable. The assessment of the quality of raw data is a interesting additional approach, which, in view of the interpretation of the results by the users carefully must be developed. The quality of the already implemented and the level of measures planned beyond this is very high. One of the planned measures is the establishment of 'data stewards' as flexible on-site assistants to be deployed, who are very demanding but also ... is very positive." ... "The consortium's efficient internal structure is impressive, consisting of the various stakeholder groups and the clearly defined bodies, including the 'Data stewards' and 'Data champions'. The topic 'efficiency and sustainability' is well received in the application addressed."
+                    </p>
+                    <p>
+                        The "Diversity" of the consortium lead, which was quite one-sided in the current application, needs to be improved in the further process. The consortium is now requested to respond to individual points in a three-page statement in reply to the reviewers remarks. In particular, the focus of the answer will lie on points such as "How are the data stewards recruited, trained and meaningfully distributed institutionally and made available to the participants" or "Possibilities of generalising the workflow approach". The improvement of "diversity" should in particular expressed in a broader governance structure to be formulated jointly with the consortium. This will also incorporate initial experiences from the BioDATEN science data center.
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <?php $date='2020-01-13';?>
         <div class="card">
             <div id="heading-<?=$date?>" class="card-header">
@@ -12,7 +36,7 @@
                     </button>
                 </h2>
             </div>
-            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+            <div id="collapse-<?=$date?>" class="collapse" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
                 <div class="card-body">
                     <p>
                         Initiated by the activities of the BioDATEN Science Data Center the Research Data Management Working Group (RDM WG) in Baden-Württemberg fosters the spread and use of ORCID IDs as persistent person identifiers. This ID will provide one of the necessary base metadata items to describe data sets within the BioDATEN community. The support document created and agreed upon is meant to help decision makers in the state's research institutions to choose a suitable solution for stable identification of persons and standardization.
