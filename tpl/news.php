@@ -3,6 +3,30 @@
 
     <!-- use accordion, see: https://getbootstrap.com/docs/4.3/components/collapse/#accordion-example -->
     <div id="accordion-news" class="accordion">
+        <?php $date='2020-02-06';?>
+        <div class="card">
+            <div id="heading-<?=$date?>" class="card-header">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-<?=$date?>" aria-expanded="true" aria-controls="collapse-<?=$date?>">
+                       <?=$date?> - nestor Access Workshop in Fulda
+                    </button>
+                </h2>
+            </div>
+            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+                <div class="card-body">
+                    <p>
+                        As a member institution of nestor the University of Freiburg participated in behalf of BioDATEN in the nestor-internal two days "Workshop on Access". The workshop intends to help to foster the qualification of partners and clarify questions on digital preservation infrastructures and access systems. Use cases and significant aspects of the user perspectives are discussed following the topics of architecture and conceptional design, aspects of the use of "virtual reading rooms", support and consultation needs on historical digital materials, next generation use like big data and data mining scenarios. Further on the OAIS offers a conceptional framework to receive and store objects differently to presenting them e.g. driven by retention periods. Standardization beside legal aspects are topics to be taken into account as well.
+                    </p>
+                    <p>
+                        Presentations to kick-start discussions and exchange were given by nestor partners like from the Leibniz Institute for German Language, the German Central Library for Medicine and the State Archive of Northrheine-Westfalia. Invited talks were delivered by Thomas Ledoux from the Bibliothèque Nationale die France: "An experienced practitioner’s view on Access (library perspective)" and Nicola Wissbrock and Sarra Hamdi, The National Archives UK: "An experienced practitioner’s view on Access (archival perspective)". The second day handled topics like "Access Rights Information in the SLUB digital long-term archive" presented by the Saxonian State and University Library Dresden (SLUB), which gave a couple of recommendations on how to pragmatically deal with copyright, usage and access statements for digital objects. The following talks covered "What is new? Changes in OAIS relating to Access" by Fernuniversität Hagen, "Chances and risks of dark archives" by the Technische Informationsbibliothek. The day got conluded by a team member of the <a href="//citar.eaas.uni-freiburg.de/">CiTAR</a> and BioDATEN long-term access team from the University of Freiburg on "Emulation as a Service". A long-term access module will get included as a module in the BioDATEN science gateway.
+                    </p>
+                    <p>
+                        <img class="img-fluid" src="img/news/<?=$date?>.jpg" />
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <?php $date='2020-02-05';?>
         <div class="card">
             <div id="heading-<?=$date?>" class="card-header">
@@ -12,7 +36,7 @@
                     </button>
                 </h2>
             </div>
-            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+            <div id="collapse-<?=$date?>" class="collapse" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
                 <div class="card-body">
                     <p>
                         BioDATEN and DAplus+ are jointly involved in the nationwide NFDI process with DataPLANT Consortium (in the area of Fundamental Plant Research). End of January the review of the DFG assessment of the of the application and the oral presentation in Bonn (Link to the older message) in early December arrived. The reviewers gave a widely positive feedback, from which we deduce that DataPLANT is still in the group for consideration of funding. We would like to thank our collaborators from the Galaxy team, especially Anika Erxleben and from the Technical University in Kaiserslautern and Jülich Research Center. The feedback addresses various areas of the proposal, such as "Maturity and relevance", "Research data management" and "Internal structure and sustainability". Besides very positive remarks there are also some critical passages that should be considered in the answer.
