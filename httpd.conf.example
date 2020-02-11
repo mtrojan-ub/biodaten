@@ -1,0 +1,9 @@
+<VirtualHost localhost>
+    DocumentRoot /var/www/html/biodaten/public
+</VirtualHost>
+
+<Directory /var/www/html/biodaten/public>
+    Options +SymLinksIfOwnerMatch
+    Require all granted
+</Directory>
+
