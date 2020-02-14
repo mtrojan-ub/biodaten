@@ -7,7 +7,7 @@ define('DIR_TPL', '../tpl/');
 define('DEFAULT_PAGE', 'home');
 define('PAGES', [
     ['id' => 'home', 'title' => 'Home', 'navbar' => 'always'],
-    ['id' => 'about', 'title' => 'About this project', 'navbar' => 'responsive', 'homeImage' => 'question-mark-2123969_640_400.jpg'],
+    ['id' => 'about', 'title' => 'About', 'navbar' => 'responsive', 'homeImage' => 'question-mark-2123969_640_400.jpg'],
     ['id' => 'news', 'title' => 'News', 'navbar' => 'responsive', 'homeImage' => 'newspapers-444447_640_400.jpg'],
     ['id' => 'conferences', 'title' => 'Conferences', 'navbar' => 'responsive', 'homeImage' => 'event-1597531_640_400.jpg'],
     ['id' => 'links', 'title' => 'Links', 'footer' => true],
@@ -42,7 +42,7 @@ function GetPageNavbarEntries() {
 
             $entries .=
             '<a href="'.GetPageUrl($page['id']).'" class="' . $classes . '">
-                <strong>'.ucfirst($page['id']).'</strong>
+                <strong>'.htmlspecialchars($page['title']).'</strong>
             </a>';
         }
     }
@@ -52,7 +52,7 @@ function GetPageNavbarEntries() {
 function GetPageNavbarEntriesExtended() {
     $entries = '';
     foreach (PAGES as $page) {
-        $entries .= '<li><a href="'.GetPageUrl($page['id']).'" class="text-white">'.$page['title'].'</a></li>';
+        $entries .= '<li><a href="'.GetPageUrl($page['id']).'" class="text-white">'.htmlspecialchars($page['title']).'</a></li>';
     }
     return $entries;
 }
@@ -61,7 +61,7 @@ function GetPageFooterEntries() {
     $entries = '';
     foreach (PAGES as $page) {
         if (isset($page['footer']) && $page['footer'] === true) {
-            $entries .= '<a href="'.GetPageUrl($page['id']).'">'.ucfirst($page['id']).'</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+            $entries .= '<a href="'.GetPageUrl($page['id']).'">'.htmlspecialchars($page['title']).'</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
         }
     }
     return $entries;
