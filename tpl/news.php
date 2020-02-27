@@ -3,6 +3,36 @@
 
     <!-- use accordion, see: https://getbootstrap.com/docs/4.3/components/collapse/#accordion-example -->
     <div id="accordion-news" class="accordion">
+        <?php $date='2020-02-27';?>
+        <div class="card">
+            <div id="heading-<?=$date?>" class="card-header">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-<?=$date?>" aria-expanded="true" aria-controls="collapse-<?=$date?>">
+                       <?=$date?> - BioDATEN at 3rd NFDI Community Workshop at LMU Munich
+                    </button>
+                </h2>
+            </div>
+            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+                <div class="card-body">
+                    <p>
+                        BioDATEN was present at the 3rd NFDI Community Workshop - Services for Research Data Management in Neuroscience - hosted at the Ludwig Maximilians University in Munich on 10th February. It brought in the base level services provider perspective and its expertise in the NFDI forming process. There were further services providers presenting at the workshop like the FIZ Karlsruhe and infrastructure providers in context of the Human Brain Project. These talks were followed by lightening talks on a range of services, initiatives and data providers like Fenix-RI, GIN, Cellular-resolution brain map, Zeiss research platform, NFDI4BMP, BRIDGE4NFDI, Helmholtz Metadata Services, RDM Services at Marburg University, LMU Munich University Library, Leibniz Rechenzentrum Munich, Gesellschaft für wissenschaftliche Datenverarbeitung Göttingen, Max Planck Computing and Data Facility on the European Open Science Cloud.
+                    </p>
+                    <p>
+                        The provider's perspective in the NFDI forming process was elaborated by the BioDATEN science data center. Providers of research IT infrastructures are faced by significant technological changes especially fostered by resource virtualization. Many of the modern services and workflows are operated in an increasingly cloud-like fashion where data and computing move from independent, personal workstations to centralized, aggregated resources. Such shared resources allow to host new projects faster. The necessary excess capacity is much easier to maintain and to justify in centralized resources because the necessary shared overhead is typically much less than in independent systems. Grant providers start to understand the changed technological landscape and start to adopt their funding schemes allowing to buy-in into existing resources preferred to establish single ones per new project. Users are faced with a difficult sizing challenge as it is often impossible for them to define the “right” configuration for a required resource. These challenges are answered by the IT industry as well as by science driven cloud and aggregated HPC offerings. The aggregation of resources into larger infrastructure allows to focus on the increasing efforts in market analysis, system selection, proper procurement and operation of (large scale) IT infrastructures, which can be done by a few experts. Further on, such a strategy would eliminate the contradiction of typical project run times versus the (significant) delay for equipment provisioning and the usual write down time spans of that equipment.
+                    </p>
+                    <p>
+                        The massive changes in the IT landscape and user expectations increase the pressure for re-orientation of university (scientific) compute centers. Cooperation in scientific cloud infrastructure is the chance for many compute centers to significantly widen their scope of IT services. It helps to keep up with the demand by the scientific communities and to offer a quite complete service portfolio. Organizationally, it allows for specialization and community focus. When defining future strategies and operation models, compute centers might find a new standing in supporting research data management by providing efficient infrastructure and consultation to the various scientific communities. Furthermore, it offers them the opportunity to participate in infrastructure calls. These developments enable researchers to offload non-domain specific tasks and services on to infrastructure provides. Suitable governance structures are to be implemented to ensure a persistent relevance of computer centers through user participation and feedback loops in the future. Close cooperation and consultation (like already done in Freiburg for the bwForCluster NEMO and for the storage infrastructure bwSFS) helps all stakeholders to have suitable and up to date infrastructures tailored to their needs. Such structures are in their infancy for the NFDI, but future NFDI wide coordination should advance this topic.
+                    </p>
+                    <p>
+                        The financing of IT infrastructures for the various scientific communities is often grant driven and inherently not suitable for providing sustainable long-term services and research data management. The future should see a changed flow of funding from a simple project-driven and organization centered practice to demand-driven streams to different infrastructure and service providers. Large infrastructure initiatives like de.NBI or the NFDI need not only to solve the role of personnel employment (permanent vs. project based) but also to define suitable business and operation models compatible with the VAT regulations and the federal and state requirements for cash flows in mixed consortia.
+                    </p>
+                    <p>
+                        <img class="img-fluid" src="img/news/<?=$date?>.jpg" />
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <?php $date='2020-02-06';?>
         <div class="card">
             <div id="heading-<?=$date?>" class="card-header">
@@ -12,7 +42,7 @@
                     </button>
                 </h2>
             </div>
-            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+            <div id="collapse-<?=$date?>" class="collapse" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
                 <div class="card-body">
                     <p>
                         As a member institution of nestor the University of Freiburg participated in behalf of BioDATEN in the nestor-internal two days "Workshop on Access". The workshop intends to help to foster the qualification of partners and clarify questions on digital preservation infrastructures and access systems. Use cases and significant aspects of the user perspectives are discussed following the topics of architecture and conceptional design, aspects of the use of "virtual reading rooms", support and consultation needs on historical digital materials, next generation use like big data and data mining scenarios. Further on the OAIS offers a conceptional framework to receive and store objects differently to presenting them e.g. driven by retention periods. Standardization beside legal aspects are topics to be taken into account as well.
