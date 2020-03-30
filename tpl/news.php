@@ -3,6 +3,31 @@
 
     <!-- use accordion, see: https://getbootstrap.com/docs/4.3/components/collapse/#accordion-example -->
     <div id="accordion-news" class="accordion">
+        <?php $date='2020-03-17';?>
+        <div class="card">
+            <div id="heading-<?=$date?>" class="card-header">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-<?=$date?>" aria-expanded="true" aria-controls="collapse-<?=$date?>">
+                       <?=$date?> - New workshop on research data management
+                    </button>
+                </h2>
+            </div>
+            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+                <div class="card-body">
+                    <p>
+                        The Science Data Center BioDATEN is getting more and more involved in outreach and training activities in research data management. Since (junior) scientists are usually actively involved in research projects, corresponding courses should take place at the beginning of the research project if possible, so that the life cycle of the research data can be covered almost completely. Thus, the computing center of the Freiburg University is planning a full-day workshop for the CIBBS research group, a research cluster granted in the German university excellency initiative and for the bio-chemistry research training group on 25th April in Freiburg. The teaching and qualification measures are geared towards junior researchers at the beginning of their career with the aim to work towards a well thought-out and structured data and workflow preparation. The workshop follows the idea to avoid time consuming and error-prone end-of-project data management by providing advice to researchers at an early stage in the life cycle of data. Data sets should be curated with the vision of later publication from the beginning, enriched with proper metadata and converted into sustainable file formats. Junior scientists need an increasing amount of qualified knowledge to access the various advanced research infrastructures and to properly handle the associated data management.
+                    </p>
+                    <p>
+                        The <a href="https://www.rz.uni-freiburg.de/rz-en/aktuell-en/fdm-ws-maerz-2020?set_language=en" target="_blank">workshop as planned</a> will be a combined information and training event to give an introduction to domain-specific research data management focusing on the cluster of excellence at the university of Freiburg (CIBBS) and further groups from the bioinformatics and bio-chemistry domains. They offer concrete instructions in day-to-day activities. Researchers are introduced to methodological, organizational, technical and legal challenges of research data management on the one hand, and on the other hand specific requests of the working group are dealt with. Further topics covered will encompass: Presentation of the respective research approaches and the associated RDM, learn from current procedures and workflows as examples (best practices) for the own work, learn of available and planned infrastructures and future developments in BioDATEN, creation and use of ORCID IDs, tools and methods for data management (hands-on; e.g. use of restic, rucio).
+                    </p>
+                    <p>
+                        Further (outreach) events focus on groups like the Bioinformatics Club of senior PIs at the university of Freiburg. The presentation planned will give an overview on the ongoing activities and developments in BioDATEN and training and summer school activities of Galaxy and ELIXIR/EOSC.<br/>
+                        Beside practical aspects of data management the outreach event will give an introduction to the planned bwSFS (Storage-for-Science) system as a future base for data storage, long-term archiving and publication. It will advocate for concepts like the ORCID ID to improve descriptive metadata for data publication. The qualification of PIs is to be regarded as particularly important, since these generate on the one hand a lot of data and are responsible for the reusability of these. On the other hand, these senior researchers in their role as supervisors for students and doctoral students serve as an example and should therefore adopt a sustainable approach to research data, for which BioDATEN will provide the necessary framework.
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <?php $date='2020-02-27';?>
         <div class="card">
             <div id="heading-<?=$date?>" class="card-header">
@@ -12,7 +37,7 @@
                     </button>
                 </h2>
             </div>
-            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+            <div id="collapse-<?=$date?>" class="collapse" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
                 <div class="card-body">
                     <p>
                         BioDATEN was present at the 3rd NFDI Community Workshop - Services for Research Data Management in Neuroscience - hosted at the Ludwig Maximilians University in Munich on 10th February. It brought in the base level services provider perspective and its expertise in the NFDI forming process. There were further services providers presenting at the workshop like the FIZ Karlsruhe and infrastructure providers in context of the Human Brain Project. These talks were followed by lightening talks on a range of services, initiatives and data providers like Fenix-RI, GIN, Cellular-resolution brain map, Zeiss research platform, NFDI4BMP, BRIDGE4NFDI, Helmholtz Metadata Services, RDM Services at Marburg University, LMU Munich University Library, Leibniz Rechenzentrum Munich, Gesellschaft für wissenschaftliche Datenverarbeitung Göttingen, Max Planck Computing and Data Facility on the European Open Science Cloud.
