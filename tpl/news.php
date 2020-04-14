@@ -3,6 +3,34 @@
 
     <!-- use accordion, see: https://getbootstrap.com/docs/4.3/components/collapse/#accordion-example -->
     <div id="accordion-news" class="accordion">
+        <?php $date='2020-04-09';?>
+        <div class="card">
+            <div id="heading-<?=$date?>" class="card-header">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-<?=$date?>" aria-expanded="true" aria-controls="collapse-<?=$date?>">
+                       <?=$date?> - BioDATEN joined three working groups for cross-cutting topics
+                    </button>
+                </h2>
+            </div>
+            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+                <div class="card-body">
+                    <p>
+                        The Science Data Center BioDATEN is actively involved in the SDC's cross-cutting activities in Baden-Württemberg coordinated by the bw2FDM project. On Wednesday, 2nd April three online meetings were held which were dedicated to the topics of legal support, business models, and meta data. BioDATEN was present both in the role as contributor and consumer through various participants from Tübingen and Freiburg. In the discussion of the group, possible objectives of the legal working group got outlined, ranging from the creation of a discussion platform and a network for recommendations of action to the preparation of workshops, trainings, FAQs, checklists, handouts, knowledge bases, and model contracts. Further on, the activities in other states with regard to legal issues in RDM will be monitored. Of course, general advice with regard to legal issues in specific individual cases is problematic. The individual research institutions are primarily responsible to provide this. The working group reiterated the importance of cooperation of the technical and the legal sides. The next meeting will primarily deal with the legal implications of data sharing and reusing.
+                    </p>
+                    <p>
+                        Business and operation models are definitely a relevant cross-cutting topic as many state sponsored projects and state-wide services share the same set of challenges including sustainable financing and the assignment of required personnel on non-existing permanent positions.<br/>
+                        The BioDATEN project is aware of this as in the precursor ViCE projects which have also addresses aspects on <a href="https://www.forschungsdaten.info/typo3temp/secure_downloads/67417/0/e932f693c232feda1961dc443f466feb7114e550/BetriebsmodelleForschInfra.pdf" target="_blank">operation</a> and <a href="https://www.forschungsdaten.info/typo3temp/secure_downloads/67417/0/e932f693c232feda1961dc443f466feb7114e550/GeschaeftsmodelleForschInfra.pdf" target="_blank">business models</a>.<br/>
+                        Theses aspects have already been elaborated but not solved. A certain base might be provided by the already existing cooperation framework existing in today's regulations (check for suitable legal entities and cooperation frameworks). Another option is the tight cooperation and coordination with ongoing NFDI activities like the <a href="//nfdi4plants.de" target="_blank">DataPLANT NFDI</a> for fundamental plant research for parts of the BioDATEN communities. For sustainable operation qualified staff plays a key role as well as the provisioning of storage systems for the data.
+                    </p>
+                    <p>
+                        The third online meeting addressed the cross-cutting topic of metadata. Metadata are very important throughout the complete lifecycle of research data. While there are basic, descriptive metadata that are very likely to be shared across communities like author, DOI, affiliation etc. there are also very domain and research specific metadata like species, treatment, experimental design etc. Descriptive metadata are best handled by using established standards like DataCite. Research specific metadata are probably best coped with by using existing ontologies. Researches can than pick the label that describes their data best. Additionally, there are technical and process related metadata. To a large extend, both can be collected automatically during the data processing on HPC resources or by tools like FITS. The well established PREMIS framework is a good solution to capture technical metadata.<br/>
+                        These four kinds of metadata must be containerised into one file. The METS framework offers such a container and is also well established.<br/>
+                        A special role plays the usage of ORCID as a method to reference authors, contributors etc. Unlike institution-based identity management, ORCID is person-based and every researcher can update their affiliation and contact information. This comes in handy as soon as researchers leave their home institution and are no longer reachable under the institution’s email address.
+                    </p>
+                    <p align="right"><sub>(DvS,HG)</sub></p>
+            </div>
+        </div>
+
         <?php $date='2020-03-17';?>
         <div class="card">
             <div id="heading-<?=$date?>" class="card-header">
@@ -12,7 +40,7 @@
                     </button>
                 </h2>
             </div>
-            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+            <div id="collapse-<?=$date?>" class="collapse" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
                 <div class="card-body">
                     <p>
                         The Science Data Center BioDATEN is getting more and more involved in outreach and training activities in research data management. Since (junior) scientists are usually actively involved in research projects, corresponding courses should take place at the beginning of the research project if possible, so that the life cycle of the research data can be covered almost completely. Thus, the computing center of the Freiburg University is planning a full-day workshop for the CIBBS research group, a research cluster granted in the German university excellency initiative and for the bio-chemistry research training group on 25th April in Freiburg. The teaching and qualification measures are geared towards junior researchers at the beginning of their career with the aim to work towards a well thought-out and structured data and workflow preparation. The workshop follows the idea to avoid time consuming and error-prone end-of-project data management by providing advice to researchers at an early stage in the life cycle of data. Data sets should be curated with the vision of later publication from the beginning, enriched with proper metadata and converted into sustainable file formats. Junior scientists need an increasing amount of qualified knowledge to access the various advanced research infrastructures and to properly handle the associated data management.
