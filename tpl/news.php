@@ -3,6 +3,28 @@
 
     <!-- use accordion, see: https://getbootstrap.com/docs/4.3/components/collapse/#accordion-example -->
     <div id="accordion-news" class="accordion">
+        <?php $date='2020-05-19';?>
+        <div class="card">
+            <div id="heading-<?=$date?>" class="card-header">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-<?=$date?>" aria-expanded="true" aria-controls="collapse-<?=$date?>">
+                       <?=$date?> - DataPLANT NFDI – recommendation for funding
+                    </button>
+                </h2>
+            </div>
+            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+                <div class="card-body">
+                    <p>
+                        On 18th May 2020 we received the recommendation for funding of the DFGs NFDI panel of experts on the DataPLANT proposal. The BioDATEN Science Data Center is both involved in the role of fundamental plant researchers and in the role of service providers. In this decision, which has yet to be confirmed by the GWK (Gemeinsame Wissenschaftskonferenz) on 26th June 2020, DataPLANT was recommended for funding along with eight other consortia. For BioDATEN we are pleased that we have been able to successfully evolve our vision together with the other applicant institutions in the DataPLANT proposal. Further feedback on the proposal and the final decision is announced in August 2020 at the latest. As nine consortia are to be funded instead of the seven originally announced, it cannot yet be said whether this will have an impact on the planned budget. The planning will be accordingly cautious.
+                    </p>
+                    <p>
+                        In order to advance the information of the community about the DataPLANT activities, there is now an initial website <a target="_blank" href="https://nfdi4plants.de/">https://nfdi4plants.de/</a> available. Further, the DataPLANT speakers have set up a Twitter account @nfdi4plants. At the same time, the DataPLANT speakers have joined cross-cutting activities and are participating, for example, in the exchange on metadata in the NFDI at the beginning of July 2020.<br>The advice of the NFDI expert panel was based on the results of the evaluation and the comments of the applicants on the evaluation results. In order to be able to adequately evaluate the applications reviewed in seven expert colloquia, the NFDI expert panel also paid special attention to the framework for setting up the NFDI in a scientifically guided procedure.
+                    </p>
+                    <p align="right"><sub>(DvS, JK, HG)</sub></p>
+                </div>
+            </div>
+        </div>
+
         <?php $date='2020-05-15';?>
         <div class="card">
             <div id="heading-<?=$date?>" class="card-header">
@@ -12,7 +34,7 @@
                     </button>
                 </h2>
             </div>
-            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+            <div id="collapse-<?=$date?>" class="collapse" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
                 <div class="card-body">
                     <p>
                         Representatives of the Science Data Center BioDATEN took part in the RDM Working Group (AK FDM) online meeting on 12th May 2020 and contributed to the discussion both on quality assurance and governance of research data.<br>
