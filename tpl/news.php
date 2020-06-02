@@ -3,6 +3,36 @@
 
     <!-- use accordion, see: https://getbootstrap.com/docs/4.3/components/collapse/#accordion-example -->
     <div id="accordion-news" class="accordion">
+        <?php $date='2020-05-28';?>
+        <div class="card">
+            <div id="heading-<?=$date?>" class="card-header">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-<?=$date?>" aria-expanded="true" aria-controls="collapse-<?=$date?>">
+                       <?=$date?> - Online-only workshop and hackathon on Nextflow and nf-core
+                    </button>
+                </h2>
+            </div>
+            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+                <div class="card-body">
+                    <p>
+                        QBiC and the DKFZ announce their co-organized workshop on 13th to 17th of July 2020. The workshop includes a Nextflow tutorial and a nf-core hackathon with tutorials. Both events will be held online-only.
+                    </p>
+                    <p>
+                        In case you are interested in attending the <b>Nextflow workshop</b> please find more information and register under the following link:<br>
+                        <a href="https://indico.dkfz.de/event/225/">https://indico.dkfz.de/event/225/</a>
+                    </p>
+                    <p>
+                        The Nextflow workshop is limited to 30 participants, so please only register if you plan to attend all sessions and follow the exercises. The sessions will also be live-streamed on YouTube, so it will be possible to follow the sessions via YouTube without previous registration.
+                    </p>
+                    <p>
+                        To register for the <b>nf-core tutorials and hackathon</b>, and find out more information about the event, please follow this link:<br>
+                        <a href="https://nf-co.re/events/2020/hackathon-july-2020">https://nf-co.re/events/2020/hackathon-july-2020</a>
+                    </p>
+                    <p align="right"><sub>(GG)</sub></p>
+                </div>
+            </div>
+        </div>
+
         <?php $date='2020-05-19';?>
         <div class="card">
             <div id="heading-<?=$date?>" class="card-header">
@@ -12,7 +42,7 @@
                     </button>
                 </h2>
             </div>
-            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+            <div id="collapse-<?=$date?>" class="collapse" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
                 <div class="card-body">
                     <p>
                         On 18th May 2020 we received the recommendation for funding of the DFGs NFDI panel of experts on the DataPLANT proposal. The BioDATEN Science Data Center is both involved in the role of fundamental plant researchers and in the role of service providers. In this decision, which has yet to be confirmed by the GWK (Gemeinsame Wissenschaftskonferenz) on 26th June 2020, DataPLANT was recommended for funding along with eight other consortia. For BioDATEN we are pleased that we have been able to successfully evolve our vision together with the other applicant institutions in the DataPLANT proposal. Further feedback on the proposal and the final decision is announced in August 2020 at the latest. As nine consortia are to be funded instead of the seven originally announced, it cannot yet be said whether this will have an impact on the planned budget. The planning will be accordingly cautious.
