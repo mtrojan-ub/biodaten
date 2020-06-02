@@ -10,6 +10,9 @@
         From 2019-12-02 to 2019-12-04: ELEXIR-NL / Technical aspects of Data Stewardship (save the date)
     </p>
     <p>
+        From 2020-07-13 to 2020-07-17: Online-only workshop and hackathon on <a href="//indico.dkfz.de/event/225/">Nextflow</a> and <a href="//nf-co.re/events/2020/hackathon-july-2020">nf-core</a>
+    </p>
+    <p>
         A list of other conferences and events organised by or related to <a target="_blank" href="//elixir-europe.org/">ELIXIR</a> is <a target="_blank" href="https://elixir-europe.org/events">here</a>.
     </p>
     <p>
