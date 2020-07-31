@@ -3,6 +3,37 @@
 
     <!-- use accordion, see: https://getbootstrap.com/docs/4.3/components/collapse/#accordion-example -->
     <div id="accordion-news" class="accordion">
+        <?php $date='2020-07-31';?>
+        <div class="card">
+            <div id="heading-<?=$date?>" class="card-header">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-<?=$date?>" aria-expanded="true" aria-controls="collapse-<?=$date?>">
+                       <?=$date?> - Working across SDCs
+                    </button>
+                </h2>
+            </div>
+            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+                <div class="card-body">
+                    <p>
+                        BioDATEN is one of four science data centres (SDC) sponsored by the Ministry of Science, Research and Arts. Although each project addresses a different scientific community, there are cross-cutting topics that must be handled by each project. Such topics are e.g. legal aspects of research data, defining metadata for research data, education on research data management, and business models for research infrastructure. As all SDCs will work in these areas and will benefit from each other’s experiences, the coordination project bw2fdm organizes and hosts various working groups to tackle these issues. BioDATEN is an active member in all working groups so far and is happy to share experiences and to network with the other SDCs. BioDATEN is also part of the spokesperson group of two working groups.
+                    </p>
+                    <h3>
+                        Business models
+                    </h3>
+                    <p>
+                        BioDATEN is actively pursuing the development of a working business model required for sustainable operation. During an SDC working group meeting, BioDATEN presented a short overview on the actual state, that put together the insights from its partners, previous projects, and. The base for sustainable operation is the cooperation and agreement among partners. This entails the possibility of exchanged services and resources. From a certain point on this needs to be put into formal agreements signed by the partners in a consortium and its users. A challenge is the creation and definition of the proper legal framework. Optimally, not every consortium needs to create its own framework and agreements but can join larger structures. Those structures still need to be established. This is getting clarified in ongoing talks with the Ministry of Science, Research and Arts.
+                    </p>
+                    <h3>
+                        Repositories
+                    </h3>
+                    <p>
+                        In the course of another SDC working group meeting, BioDATEN presented its decision process over the last year towards a suitable repository service for data publication. It finally came up with InvenioRDM after the analysis of existing solutions like DataVerse, Fedora/DSpace or iRods. During the decision process, BioDATEN was in exchange with various experts from university libraries, computer centres within the state of Baden-Württemberg, and with experts from various NFDI consortia like DataPLANT. These activities identified the shortcomings of traditional archiv and library solutions regarding Big Data as required e.g. by bwSFS and the BioDATEN communities. InvenioRDM features a modern extensible architecture and has already a significant userbase within the Zenodo community. Thus, a high probability of sustainable and long-term service can be expected. Additionally, InvenioRDM is a modular, Python-based open source data repository software initially developed by CERN which provides a modern REST-API. The highly modular architecture is micro-service oriented, scalable, and easily extensible. It provides the necessary broad support for storage backends like S3 object storage, filesystem or WebDAV. Indexing and search is based on the Elastic Search backend. InvenioRDM allows for the simple integration of external identity providers via oAuth 2.0/OpenID Connect and exposes an OAI-PMH interface for metadata harvesting and data exchange with other repository services.
+                    </p>
+                    <p align="right"><sub>(HG,DvS)</sub></p>
+                </div>
+            </div>
+        </div>
+
         <?php $date='2020-05-28';?>
         <div class="card">
             <div id="heading-<?=$date?>" class="card-header">
@@ -12,7 +43,7 @@
                     </button>
                 </h2>
             </div>
-            <div id="collapse-<?=$date?>" class="collapse show" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
+            <div id="collapse-<?=$date?>" class="collapse" aria-labelledby="heading-<?=$date?>" data-parent="#accordion-news">
                 <div class="card-body">
                     <p>
                         QBiC and the DKFZ announce their co-organized workshop on 13th to 17th of July 2020. The workshop includes a Nextflow tutorial and a nf-core hackathon with tutorials. Both events will be held online-only.
