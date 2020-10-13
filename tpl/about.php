@@ -41,10 +41,9 @@
                 <li><a target="_blank" href="//www.uni-hohenheim.de/organisation/einrichtung/fg-mikrobielle-oekologie-bei-nutztieren">Mikrobielle Ökologie bei Nutztieren</a></li>
             </ul>
         </li>
-        <li><a target="_blank" href="//www.ab.mpg.de/verhaltensbiologie">Max-Planck-Institut für Verhaltensbiologie</a></li>
-        <li><a target="_blank" href="//www.orn.mpg.de">Max-Planck-Institut für Ornithologie Radolfzell/Konstanz (MPIO)</a></li>
+        <li><a target="_blank" href="//www.ab.mpg.de/verhaltensbiologie">Max-Planck-Institut für Verhaltensbiologie Radolfzell/Konstanz</a></li>
         <li><a target="_blank" href="//www.dkfz.de">Deutsches Krebsforschungszentrum Heidelberg (DKFZ)</a></li>
-        <li><a target="_blank" href="//www.embl.de">European Molecular Biology Laboratory (EMBL)</a></li>
+        <li><a target="_blank" href="//www.embl.de">European Molecular Biology Laboratory Heidelberg (EMBL)</a></li>
         <li><a target="_blank" href="//uni-konstanz.de">Universität Konstanz</a>
             <ul>
                 <li><a target="_blank" href="//www.kim.uni-konstanz.de">Kommunikations-, Informations-, Medienzentrum der Universität Konstanz (KIMKN)</a></li>
